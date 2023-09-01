@@ -12,8 +12,9 @@ const SideBar = ({ selectedCategory, setSelectedCategory,display }) => (
       overflowY: "auto",
       height: "100vh",
       flexDirection: { md: "column" },
-      marginBlockStart: "10px",
-      display: display ? 'block':'none'
+      paddingBlockStart: "10px",
+      display: display ? 'block':'none',
+      backgroundColor:'black',
     }}
   >
     <Link to="/" style={{ textDecoration: "none" }}>
