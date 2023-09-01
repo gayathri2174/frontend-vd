@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+.search-bar {
+  border: none;
+  outline: none;
+  background-color: #372d2d;
+}
+.caret {
+  background-color: #463c3c;
+  border-radius: 20px;
+  padding: 5px;
+}
+.sidebar {
+  height: 100vh;
+  width: 220px;
+  background-color: white;
+  border-right: 1px solid #3d3d3d;
+  position: static; 
+  display: flex;
+  flex: 20%;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin-left: 2%;
+}
+@media only screen and (max-width: 750px) {
+  .search-bar {
+    display: none;
+    background-color: black;
+    width: 0;
+  }
+  .paper {
+    background-color: black;
+    margin-right: 20px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .caret {
+    display: none;
+  }
+  .moon {
+    display: none;
+  }
+}
+.category-btn:hover {
+  color: white !important;
+}
+
+.category-btn:hover span {
+  color: white !important;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-icon {
+  color: #6f6f6f;
+}
+.sidebar-name {
+  color: #6f6f6f;
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.sidebar-iconextra {
+  visibility: hidden;
+}
+.home-text {
+  color: #fffcfc;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+}
+
+.home-text-songcard {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: #e7e4e4;
+}
+
+.home-text-songcard-artist {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  color: #c6c2c2;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-top: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+.boxc {
+  flex-basis: calc(25% - 20px);
+  height: 200px; 
+  margin-right: 20px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  margin-top: 2%;
+  box-sizing: border-box;
+}
+
+.boxc:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .boxc {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .boxc {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .boxc {
+    flex-basis: calc(25% - 20px);
+    width: 200px;
+    margin-right: 80px;
+  }
+}
+.cover {
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* Videofeed.css */
+
+.video-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Add the blur effect for the rest of the text */
+.video-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+
+.button-player {
+  
+  cursor: pointer;
+}
+
+/* Adjust styles for your SVG icons */
+button svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon{
+  color: white;
+}
+
+.select>svg{
+  color: white;
+  
+}
+
+.select{
+  background-color: black;
+}
+.container {
+ 
+  position: relative; 
+}
+
+.box {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  z-index: 9;
+  margin: 30px;
+  margin: 200px;
+  margin-top:210px;
+}
+
+.font-regular{
+  font-weight: 400;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+.font-light{
+  font-weight: 300;
+}
+.font-thin{
+  font-weight: 200;
+}
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-rounded .MuiPaper-elevation1 .MuiPaper-root .MuiMenu-paper .MuiPaper-elevation .MuiPaper-rounded .MuiPaper-elevation8 .MuiPopover-paper .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+  background-color: #372d2d;
+}
+#demo-simple-select{
+  background-color: black;
+  width: 100px;
+  color: #c6c2c2;
+}
+
+.lyric-box{
+  background-color: #3d3d3d;
+  padding: 20px;
+  border-radius: 25px;
+  padding-left: 35px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+  padding-top: 30px;
+}
+
+.lyric{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+.search-box::after{
+  border-bottom:2px solid white ;
+
+}
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root:after{
+  border-bottom: 2px solid white !important;
+}
+
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root{
+  color:#bbb !important;
+}
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color:#bbb !important;
+}
+.css-10botns-MuiInputBase-input-MuiFilledInput-input{
+  color: #e7e4e4 !important;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list{
+  color: black !important;
+}
+
+.truncate-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
